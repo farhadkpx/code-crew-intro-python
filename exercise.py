@@ -64,17 +64,44 @@ def median(values):
 
 
 
+
+
+
+
+
+
+
+
+
+
+# Steps
+# 1. Same steps in the ComputerPlayer and the HumanPlayer
+# 2. How to implement start to use the computer player the same as the human player
+# 3. Defining the winning combinations for the game
+
+
 # Rock, scissor, paper game
 class ComputerPlayer:
-	def rock():
-		print('rock')
+	pass
+	# 1a. Implement the method for which the player returns a combination
+		# - store the available combinations
+		# - generate a random combination, generate a number and using the value as index to a list
+
 
 class HumanPlayer:
-	def paper():
-		print('paper')
+	pass
+	# 2a. Implement the method for which the player returns a combination
+		# - store the available combinations
+		# - get the input and see if its in the available combinations, if it is valid, return the value, if it is not, ask for another input
 
 class Game:
-	pass
+	def __init__(self, player1, player2): #Doesn't matter if these are human or computer players; if you are a human player, the implementation is typing your answer; if the player is a computer, the implementation is generating an answer
+		self.player1 = player1
+		self.player2 = player2
+	def start(self): #start method
+		# 1. Get the combination of player1
+		# 2. Get the combination of player2
+		# 3. Determine whether a player's combination beats another player
 
 if __name__ == '__main__':
 	player = HumanPlayer()
